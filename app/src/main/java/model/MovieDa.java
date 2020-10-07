@@ -13,7 +13,6 @@ import java.util.List;
 
         movies.add(new Movie("The call of the Wild ",2018,"Drama"));
         movies.add(new Movie("All the Brigh Places",2019,"Drama"));
-        movies.add(new Movie("Little Women",2020,"Drama"));
         movies.add(new Movie("Feast ",2012,"Drama"));
 
         movies.add(new Movie("Don`t Speak ",2019,"Horror"));
@@ -37,10 +36,19 @@ import java.util.List;
     }
 
      @Override
-     public List<String> getTitles() {
-         ArrayList<String> titles = new ArrayList<>();
-         titles.add("gfdsdfg");
+     public String[] getTitles() {
+        String[] titles = new String[]{ "Spenser Confidential","The call of the Wild","Don`t Speak","Dolittle","The Gentlemen",
+        "All the Brigh Places","The Pagemaster","A Shaum the Sheep","Sonic","101 Dalmatians","Feast","I am Fear "};
+
+
          return titles;
+
+     }
+     public String[] getYears() {
+         String[] years = new String[]{ "2010" , "2011" ,"2012" ,"2013","2014","2015","2016","2017","2018","2019","2020" };
+
+
+         return years;
 
      }
 
