@@ -36,4 +36,12 @@ import java.util.List;
 
     }
 
-}
+     @Override
+     public List<String> getTitles() {
+         ArrayList<String> titles = new ArrayList<>();
+         titles.add("gfdsdfg");
+         return titles;
+
+     }
+
+ }
