@@ -3,7 +3,7 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-class MovieDa implements MovieUI {
+ class MovieDa implements MovieUI {
     private ArrayList<Movie> movies = new ArrayList<>();
 
     public MovieDa() {
@@ -41,8 +41,6 @@ class MovieDa implements MovieUI {
     public String[] getTitles() {
         String[] titles = new String[]{"Spenser Confidential", "The call of the Wild", "Don`t Speak", "Dolittle", "The Gentlemen",
                 "All the Brigh Places", "The Pagemaster", "A Shaum the Sheep", "Sonic", "101 Dalmatians", "Feast", "I am Fear "};
-
-
         return titles;
 
     }

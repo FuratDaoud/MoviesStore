@@ -72,11 +72,14 @@ public class MainActivity extends AppCompatActivity {
         value = ((RadioButton) findViewById(rg.getCheckedRadioButtonId())).getText().toString();
         item2 = spinner2.getSelectedItem().toString();
         List<Movie> movies = objmovie.getMovies(item);
+
         String str = "";
         for (Movie m : movies) {
             str += m.getTitle() + "\n";
         }
         // Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
-        edtext.setText(item+ " , " + item2 + " , " + value );
+        edtext.setText(item + " , " + item2 + " , " + value);
+
     }
+
 }
