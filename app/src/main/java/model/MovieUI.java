@@ -6,5 +6,4 @@ public interface MovieUI {
      List<Movie> getMovies (String cat);
      String[] getTitles();
       String[] getYears();
-
 }

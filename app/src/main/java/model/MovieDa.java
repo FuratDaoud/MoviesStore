@@ -35,6 +35,7 @@ import java.util.List;
 
     }
 
+
      @Override
      public String[] getTitles() {
         String[] titles = new String[]{ "Spenser Confidential","The call of the Wild","Don`t Speak","Dolittle","The Gentlemen",
@@ -44,12 +45,13 @@ import java.util.List;
          return titles;
 
      }
-     public String[] getYears() {
+    public String[] getYears() {
          String[] years = new String[]{ "2010" , "2011" ,"2012" ,"2013","2014","2015","2016","2017","2018","2019","2020" };
-
-
          return years;
 
      }
+
+
+
 
  }
