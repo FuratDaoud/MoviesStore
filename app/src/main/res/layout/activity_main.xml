@@ -132,20 +132,47 @@
 
         </LinearLayout>
     </LinearLayout>
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
     <Button
         android:id="@+id/btnsearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
         android:background="@android:color/primary_text_light"
-        android:gravity="center"
         android:onClick="btnsearchOnclick"
-        android:text="SEARCH"
+        android:text=" Year"
         android:textColor="@android:color/holo_purple"
-        android:textSize="30dp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn1search1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:background="@android:color/primary_text_light"
+        android:onClick="btnsearchOnclick1"
+        android:text="  Gener"
+        android:textColor="@android:color/holo_purple"
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/btn1search2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/primary_text_light"
+        android:onClick="btnsearchOnclick2"
+        android:text="  Title"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/holo_purple"
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
+</LinearLayout>
 
     <EditText
         android:id="@+id/etext"

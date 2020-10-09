@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private RadioButton radioButton;
     private EditText edtext;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,26 +67,50 @@ public class MainActivity extends AppCompatActivity {
     public void btnsearchOnclick(View view) {
         Moviefactory factory = new Moviefactory();
         MovieUI objmovie = factory.getModel();
-        String item = "";
         String item2 = "";
-        String value = "";
-        item = spinner1.getSelectedItem().toString();
-        value = ((RadioButton) findViewById(rg.getCheckedRadioButtonId())).getText().toString();
         item2 = spinner2.getSelectedItem().toString();
-        List<Movie> movies = objmovie.getMovies(item);
+        List<Movie> movie = objmovie.getYears(item2);
 
-        String str = "";
-        for (Movie m : movies) {
-            str += m.getYear();
+
+        for (Movie m : movie) {
+            //item += m.getTitle();
+            item2 += " , " + m.getTitle();
         }
-        //Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
-        edtext.setText(item + " , " + item2 + " , " + value);
-
-
+        edtext.setText(item2);
     }
 
+    public void btnsearchOnclick1(View view) {
+        String value = "";
+        Moviefactory factory = new Moviefactory();
+        MovieUI objmovie = factory.getModel();
+        value = ((RadioButton) findViewById(rg.getCheckedRadioButtonId())).getText().toString();
+        List<Movie> movi = objmovie.getgener(value);
 
+
+        for (Movie m : movi) {
+            //item += m.getTitle();
+            value += " , " + m.getTitle();
+
+        }
+        edtext.setText(value);
+    }
+
+    public void btnsearchOnclick2(View view) {
+        String item = "";
+        Moviefactory factory = new Moviefactory();
+        MovieUI objmovie = factory.getModel();
+        item = spinner1.getSelectedItem().toString();
+        List<Movie> movies = objmovie.getMovies(item);
+
+        for (Movie m : movies) {
+            item += " , " + m.getYear() + " ," + m.getGenre();
+        }
+        edtext.setText(item);
+
+    }
 }
+
+
 
 
 
