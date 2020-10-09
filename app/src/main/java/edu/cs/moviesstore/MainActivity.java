@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -75,11 +76,16 @@ public class MainActivity extends AppCompatActivity {
 
         String str = "";
         for (Movie m : movies) {
-            str += m.getTitle() + "\n";
+            str += m.getYear();
         }
-        // Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
         edtext.setText(item + " , " + item2 + " , " + value);
+
 
     }
 
+
 }
+
+
+

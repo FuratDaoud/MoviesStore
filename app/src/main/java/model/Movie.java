@@ -5,6 +5,13 @@ public class Movie {
     private int year;
     private String genre;
 
+    public Movie(String title, int year, String genre) {
+        this.title = title;
+        this.year = year;
+        this.genre = genre;
+    }
+
+
     public String getTitle() {
         return title;
     }
@@ -26,12 +33,6 @@ public class Movie {
     }
 
     public void setGenre(String genre) {
-        this.genre = genre;
-    }
-
-    public Movie(String title, int year, String genre) {
-        this.title = title;
-        this.year = year;
         this.genre = genre;
     }
 
