@@ -42,11 +42,7 @@ class MovieDa implements MovieUI {
             }
         }
         return data;
-
     }
-
-
-
 
     public List<Movie> getgener(String gener) {
         ArrayList<Movie> data = new ArrayList<>();
@@ -56,9 +52,7 @@ class MovieDa implements MovieUI {
             }
         }
         return data;
-
     }
-
 
     @Override
     public String[] getTitles() {
@@ -70,7 +64,7 @@ class MovieDa implements MovieUI {
 
     @Override
     public String[] getgen() {
-        String[] genere = new String[]{"Crime" , "Drama" ,"Horror" , "Comedy"} ;
+        String[] genere = new String[]{"Crime", "Drama", "Horror", "Comedy"};
         return genere;
     }
 
@@ -80,8 +74,6 @@ class MovieDa implements MovieUI {
         return years;
 
     }
-
-
 
 
 }
