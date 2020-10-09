@@ -22,26 +22,26 @@ class MovieDa implements MovieUI {
         movies.add(new Movie("A Shaum the Sheep  ", "2010", "Comedy"));
     }
 
-    public List<Movie> getMovies(String var) {
-        ArrayList<Movie> namelist = new ArrayList<>();
+    public List<Movie> getMovies(String title) {
+        ArrayList<Movie> data = new ArrayList<>();
         for (Movie name : movies) {
-            if (name.getTitle().equals(var)) {
-                namelist.add(name);
+            if (name.getTitle().equals(title)) {
+                data.add(name);
             }
         }
-        return namelist;
+        return data;
 
     }
 
     @Override
     public List<Movie> getYears(String year) {
-        ArrayList<Movie> yearlist = new ArrayList<>();
-        for (Movie varyear : movies) {
-            if (varyear.getYear().equals(year)) {
-                yearlist.add(varyear);
+        ArrayList<Movie> data = new ArrayList<>();
+        for (Movie Year : movies) {
+            if (Year.getYear().equals(year)) {
+                data.add(Year);
             }
         }
-        return yearlist;
+        return data;
 
     }
 

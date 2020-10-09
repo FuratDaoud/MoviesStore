@@ -7,9 +7,7 @@ public interface MovieUI {
     List<Movie> getYears(String year);
     List<Movie> getgener(String gener);
 
-
     String[] getTitles();
-
     String[] getgen();
     String[] getYears();
 
