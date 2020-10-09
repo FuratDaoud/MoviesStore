@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
         for (Movie m : movi) {
             //item += m.getTitle();
-            value += " , " + m.getTitle();
+            value += " , " + m.getTitle() + m.getYear();
 
         }
         edtext.setText(value);
@@ -105,7 +105,6 @@ public class MainActivity extends AppCompatActivity {
             item += " , " + m.getYear() + " ," + m.getGenre();
         }
         edtext.setText(item);
-
 
     }
 }
